@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We Provide Property Bali</title>
+    <link href="src/output.css" rel="stylesheet">
+    <link rel="icon" href="dist/img/logo-hitam.png" class="rounded-circle" alt="logo-tab">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Logo Whatsapp -->
+<a href="https://api.whatsapp.com/send?phone=6288985971388&text=Hallo%20Streamaffix!%20Saya%20ingin%20menanyakan%20terkait%20paket%20yang%20ditawarkan." target="_blank" rel="noopener noreferrer" class="">
+    <div class="fixed bottom-4 right-4 md:bottom-8 md:right-8 bg-green-500 hover:bg-green-600 transition duration-300 ease-in-out p-3 rounded-full shadow-lg z-50">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo" class="w-8 h-8 md:w-10 md:h-10">
+    </div>
+</a>
+<!-- End of Logo Whatsapp -->
+
+<!-- Fullscreen Image -->
+<section>
+    <div class="h-screen bg-cover bg-center" style="background-image: url('dist/img/hero-section.png'); position: relative;">
+        <div class="p-5">
+            <nav class="bg-white bg-opacity-90 p-5 rounded-full shadow-md z-20 relative">
+                <div class="mx-auto flex justify-between items-center">
+                    <div class="flex items-center space-x-5">
+                        <img src="dist/img/logo-hitam2.png" alt="wpp-logo" class="h-10">
+                    </div>
+                    <div class="flex items-center space-x-10">
+                        <a href="#home" class="text-black hover:text-primary">Home</a>
+                        <div class="group inline-block">
+                            <button
+                                aria-haspopup="true"
+                                aria-controls="menu"
+                                class="flex items-center">
+                                <span class="pr-1 text-black hover:text-primary flex-1">Property</span>
+                            </button>
+                            <ul
+                                id="menu"
+                                aria-hidden="true"
+                                class="bg-white border rounded-sm transform scale-0 group-hover:scale-100 absolute 
+                                transition duration-150 ease-in-out origin-top">
+                                <!-- Freehold Option -->
+                                <li class="rounded-sm relative px-3 py-1 hover:bg-gray-100">
+                                    <button
+                                        aria-haspopup="true"
+                                        aria-controls="menu-lang-python"
+                                        class="w-full text-left flex items-center outline-none focus:outline-none min-w-32" >
+                                        <span class="pr-1 flex-1 text-black hover:text-primary ">Freehold</span>
+                                    </button>
+                                    <ul
+                                        id="menu-lang-python"
+                                        aria-hidden="true"
+                                        class="bg-white border rounded-sm absolute top-0 right-0 
+                                        transition duration-150 ease-in-out origin-top-left min-w-40">
+                                        <li class="px-3 py-1 hover:bg-gray-100">
+                                            <a href="/villa-for-rent" class="block w-full h-full text-black hover:text-primary">Villa For Rent</a>
+                                        </li>
+                                        <li class="px-3 py-1 hover:bg-gray-100">
+                                            <a href="/villa-for-sale" class="block w-full h-full text-black hover:text-primary">Villa For Sale</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- Leasehold Option -->
+                                <li class="rounded-sm relative px-3 py-1 hover:bg-gray-100">
+                                    <button
+                                        aria-haspopup="true"
+                                        aria-controls="menu-lang-python2"
+                                        class="w-full text-left flex items-center outline-none focus:outline-none min-w-32">
+                                        <span class="pr-1 flex-1 text-black hover:text-primary">Leasehold</span>
+                                    </button>
+                                    <ul
+                                        id="menu-lang-python2"
+                                        aria-hidden="true"
+                                        class="bg-white border rounded-sm absolute top-0 right-0 
+                                        transition duration-150 ease-in-out origin-top-left min-w-40">
+                                        <li class="px-3 py-1 hover:bg-gray-100">
+                                            <a href="/leasehold-villa-for-rent" class="block w-full h-full text-black hover:text-primary">Villa For Rent</a>
+                                        </li>
+                                        <li class="px-3 py-1 hover:bg-gray-100">
+                                            <a href="/leasehold-villa-for-sale" class="block w-full h-full text-black hover:text-primary">Villa For Sale</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <a href="#guide" class="text-black hover:text-primary">Guide</a>
+                        <a href="#faq" class="text-black hover:text-primary">FAQ</a>
+                        <a href="#about" class="text-black hover:text-primary">About</a>
+                        <a href="#contact" class="text-black hover:text-primary">Contact</a>
+                    </div>
+                    <div class="flex justify-center">
+                        <form class="flex w-full" method="GET">
+                            <div class="relative w-full">
+                                <input class="form-input w-full p-3 ps-6 rounded-full border border-gray-300" type="text" placeholder="Search" aria-label="Search" autocomplete="off">
+                                <button id="searchButton" class="absolute inset-y-0 right-1 top-1 bottom-1 flex items-center p-3 bg-primary text-white border-black rounded-full hover:bg-green-950 transition duration-500 ease-in-out" type="submit">
+                                    <i class="fas fa-search w-6" style="font-size: 17px;"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+            <div class="absolute inset-0 flex items-center justify-center space-x-5 z-10">
+                <div class="container">
+                    <div class="flex justify-center">
+                        <a href="/guide.html" class="border border-primary py-2 px-6 rounded-full text-primary mb-5 hover:border-green-950 hover:bg-transparent hover:shadow-md hover:shadow-green-950/50 transition duration-500 ease-in-out">LET US GUIDE YOUR HOME</a>
+                    </div>
+                    <div class="flex flex-col items-center justify-center">
+                        <h1 class="text-6xl text-center text-primary mb-5">Believe in finding it</h1>
+                        <p class="text-base text-center text-primary mb-10">Search properties for sale and to rent in Bali</p>
+                    </div>
+                    <div class="w-full 2xl:px-28">
+                        <div class="bg-white py-6 shadow-lg flex gap-4 justify-center items-center flex-wrap rounded-2xl">
+                            <!-- Location -->
+                            <div class="flex flex-col">
+                                <label for="location" class="text-primary font-medium ps-1 mb-1">Location</label>
+                                <select id="location" class="border border-gray-300 rounded-md p-2">
+                                    <option value="">Select Location</option>
+                                    <option value="canggu">Canggu</option>
+                                    <option value="ubud">Ubud</option>
+                                    <option value="sunset-road">Sunset Road</option>
+                                    <option value="uluwatu">Uluwatu</option>
+                                </select>
+                            </div>
+                    
+                            <!-- Type -->
+                            <div class="flex flex-col">
+                                <label for="type" class="text-primary font-medium ps-1 mb-1">Type</label>
+                                <select id="type" class="border border-gray-300 rounded-md p-2">
+                                    <option value="">Select Type</option>
+                                    <option value="leasehold">Leasehold</option>
+                                    <option value="freehold">Freehold</option>
+                                </select>
+                            </div>
+                    
+                            <!-- Bedroom -->
+                            <div class="flex flex-col">
+                                <label for="bedroom" class="text-primary font-medium ps-1 mb-1">Bedroom</label>
+                                <select id="bedroom" class="border border-gray-300 rounded-md p-2">
+                                    <option value="" style="color: #f87171;">Select Bedroom</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                    
+                            <!-- Min Budget -->
+                            <div class="flex flex-col">
+                                <label for="min-budget" class="text-primary font-medium ps-1 mb-1">Min Budget</label>
+                                <input id="min-budget" type="number" placeholder="Min Budget" min="1000000" step="1000000" class="border border-gray-300 rounded-md p-2 w-32">
+                            </div>
+                    
+                            <!-- Max Budget -->
+                            <div class="flex flex-col">
+                                <label for="max-budget" class="text-primary font-medium ps-1 mb-1">Max Budget</label>
+                                <input id="max-budget" type="number" placeholder="Max Budget" max="10000000" step="1000000" class="border border-gray-300 rounded-md p-2 w-32">
+                            </div>
+                    
+                            <!-- Search Button -->
+                            <div class="flex flex-col">
+                                <label for="max-budget" class="text-white ps-1 mb-1">Search</label>
+                                <button class="bg-primary text-white py-2 px-6 rounded-full hover:bg-green-950 transition duration-500 ease-in-out w-full max-w-xs">Search</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End of Fullscreen Image -->
+
+<!-- New Listing -->
+<section id="new-listing" class="pt-10 pb-10">
+    <div class="container mx-auto">
+        <div class="w-full pb-10">
+            <div class="w-full">
+                <h1 class="text-3xl text-center text-primary font-semibold mb-2" style="letter-spacing: 0.05em;">Featured Properties</h1>
+                <p class="text-center text-base">Find your perfect getaway or investment today.</p>
+            </div>
+        </div>
+        <div class="w-full pb-10 flex justify-center">
+            <h3 id="all-properties" class="tab active bg-amber-50 border border-black rounded-full py-1 px-4 cursor-pointer" onclick="showTab('all-properties')">All Properties</h3>
+            <h3 id="for-sale" class="tab active rounded-full hover:text-primary py-1 px-4 cursor-pointer" onclick="showTab('for-sale')">For Sale</h3>
+            <h3 id="for-rent" class="tab active rounded-full hover:text-primary py-1 px-4 cursor-pointer" onclick="showTab('for-rent')">For Rent</h3>
+        </div>        
+        <div class="w-full flex flex-wrap justify-center xl:mx-auto pb-10">
+            <!-- Add flex-1 to fill the space equally -->
+            <div class="w-1/2 md:w-1/3 px-3 pb-6">
+                <div class="rounded-lg shadow-md overflow-hidden">
+                    <img src="dist/img/listing-1.png" alt="listing-1">
+                </div>
+            </div>
+            <div class="w-1/2 md:w-1/3 px-3 pb-6">
+                <div class="rounded-lg shadow-md overflow-hidden">
+                    <img src="dist/img/listing-2.png" alt="listing-2">
+                </div>
+            </div>
+            <div class="w-1/2 md:w-1/3 px-3 pb-6">
+                <div class="rounded-lg shadow-md overflow-hidden">
+                    <img src="dist/img/listing-3.png" alt="listing-3">
+                </div>
+            </div>
+            <div class="w-1/2 md:w-1/3 px-3 pb-6">
+                <div class="rounded-lg shadow-md overflow-hidden">
+                    <img src="dist/img/listing-4.png" alt="listing-4">
+                </div>
+            </div>
+            <div class="w-1/2 md:w-1/3 px-3 pb-6">
+                <div class="rounded-lg shadow-md overflow-hidden">
+                    <img src="dist/img/listing-5.png" alt="listing-5">
+                </div>
+            </div>
+            <div class="w-1/2 md:w-1/3 px-3 pb-6">
+                <div class="rounded-lg shadow-md overflow-hidden">
+                    <img src="dist/img/listing-6.png" alt="listing-6">
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center">
+            <a href="/guide.html" class="border py-2 px-6 rounded-full bg-secondary hover:bg-amber-200 transition duration-500 ease-in-out flex items-center">
+                SEE ALL LISTING
+                <i class="fas fa-arrow-right ml-2 icon-thin"></i>
+            </a>
+        </div>        
+    </div>
+</section>
+<!-- New Listing -->
+
+<!-- New Listing Update-->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    <!-- Card 1 -->
+    <div class="">
+      <div class="relative">
+        <img src="/dist/img/listing-1.png" alt="Luxury Family Home" class="w-full">
+        <div class="absolute top-2 left-2 flex space-x-2">
+          <span class="bg-green-800 text-white text-xs font-bold px-2 py-1 rounded">FOR SALE</span>
+          <span class="bg-yellow-500 text-white text-xs font-bold px-2 py-1 rounded">FEATURED</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 p-6">
+          <div class="bg-white bg-opacity-80 p-4">
+            <h3 class="text-lg font-semibold">Luxury Family Home</h3>
+            <p class="text-gray-600">1800-1818 79th St</p>
+            <div class="flex justify-between items-center mt-2">
+              <p class="text-red-500 text-xl font-bold">$395,000</p>
+              <div class="flex items-center space-x-4 text-gray-600 text-sm">
+                <div class="flex items-center">
+                  <i class="fa-solid fa-bed"></i>
+                  <span class="ml-1">4</span>
+                </div>
+                <div class="flex items-center">
+                  <i class="fa-solid fa-bath"></i>
+                  <span class="ml-1">1</span>
+                </div>
+                <div class="flex items-center">
+                  <i class="fa-solid fa-ruler-combined"></i>
+                  <span class="ml-1">400</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="">
+        <div class="relative">
+          <img src="/dist/img/listing-2.png" alt="Luxury Family Home" class="w-full">
+          <div class="absolute top-2 left-2 flex space-x-2">
+            <span class="bg-green-800 text-white text-xs font-bold px-2 py-1 rounded">FOR SALE</span>
+            <span class="bg-yellow-500 text-white text-xs font-bold px-2 py-1 rounded">FEATURED</span>
+          </div>
+          <div class="absolute bottom-0 left-0 right-0 p-6">
+            <div class="bg-white bg-opacity-80 p-4">
+              <h3 class="text-lg font-semibold">Luxury Family Home</h3>
+              <p class="text-gray-600">1800-1818 79th St</p>
+              <div class="flex justify-between items-center mt-2">
+                <p class="text-red-500 text-xl font-bold">$395,000</p>
+                <div class="flex items-center space-x-4 text-gray-600 text-sm">
+                  <div class="flex items-center">
+                    <i class="fa-solid fa-bed"></i>
+                    <span class="ml-1">4</span>
+                  </div>
+                  <div class="flex items-center">
+                    <i class="fa-solid fa-bath"></i>
+                    <span class="ml-1">1</span>
+                  </div>
+                  <div class="flex items-center">
+                    <i class="fa-solid fa-ruler-combined"></i>
+                    <span class="ml-1">400</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="">
+        <div class="relative">
+          <img src="/dist/img/listing-3.png" alt="Luxury Family Home" class="w-full">
+          <div class="absolute top-2 left-2 flex space-x-2">
+            <span class="bg-green-800 text-white text-xs font-bold px-2 py-1 rounded">FOR SALE</span>
+            <span class="bg-yellow-500 text-white text-xs font-bold px-2 py-1 rounded">FEATURED</span>
+          </div>
+          <div class="absolute bottom-0 left-0 right-0 p-6">
+            <div class="bg-white bg-opacity-80 p-4">
+              <h3 class="text-lg font-semibold">Luxury Family Home</h3>
+              <p class="text-gray-600">1800-1818 79th St</p>
+              <div class="flex justify-between items-center mt-2">
+                <p class="text-red-500 text-xl font-bold">$395,000</p>
+                <div class="flex items-center space-x-4 text-gray-600 text-sm">
+                  <div class="flex items-center">
+                    <i class="fa-solid fa-bed"></i>
+                    <span class="ml-1">4</span>
+                  </div>
+                  <div class="flex items-center">
+                    <i class="fa-solid fa-bath"></i>
+                    <span class="ml-1">1</span>
+                  </div>
+                  <div class="flex items-center">
+                    <i class="fa-solid fa-ruler-combined"></i>
+                    <span class="ml-1">400</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="">
+        <div class="relative">
+          <img src="/dist/img/listing-4.png" alt="Luxury Family Home" class="w-full">
+          <div class="absolute top-2 left-2 flex space-x-2">
+            <span class="bg-green-800 text-white text-xs font-bold px-2 py-1 rounded">FOR SALE</span>
+            <span class="bg-yellow-500 text-white text-xs font-bold px-2 py-1 rounded">FEATURED</span>
+          </div>
+          <div class="absolute bottom-0 left-0 right-0 p-6">
+            <div class="bg-white bg-opacity-80 p-4">
+              <h3 class="text-lg font-semibold">Luxury Family Home</h3>
+              <p class="text-gray-600">1800-1818 79th St</p>
+              <div class="flex justify-between items-center mt-2">
+                <p class="text-red-500 text-xl font-bold">$395,000</p>
+                <div class="flex items-center space-x-4 text-gray-600 text-sm">
+                  <div class="flex items-center">
+                    <i class="fa-solid fa-bed"></i>
+                    <span class="ml-1">4</span>
+                  </div>
+                  <div class="flex items-center">
+                    <i class="fa-solid fa-bath"></i>
+                    <span class="ml-1">1</span>
+                  </div>
+                  <div class="flex items-center">
+                    <i class="fa-solid fa-ruler-combined"></i>
+                    <span class="ml-1">400</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="">
+        <div class="relative">
+          <img src="/dist/img/listing-5.png" alt="Luxury Family Home" class="w-full">
+          <div class="absolute top-2 left-2 flex space-x-2">
+            <span class="bg-green-800 text-white text-xs font-bold px-2 py-1 rounded">FOR SALE</span>
+            <span class="bg-yellow-500 text-white text-xs font-bold px-2 py-1 rounded">FEATURED</span>
+          </div>
+          <div class="absolute bottom-0 left-0 right-0 p-6">
+            <div class="bg-white bg-opacity-80 p-4">
+              <h3 class="text-lg font-semibold">Luxury Family Home</h3>
+              <p class="text-gray-600">1800-1818 79th St</p>
+              <div class="flex justify-between items-center mt-2">
+                <p class="text-red-500 text-xl font-bold">$395,000</p>
+                <div class="flex items-center space-x-4 text-gray-600 text-sm">
+                  <div class="flex items-center">
+                    <i class="fa-solid fa-bed"></i>
+                    <span class="ml-1">4</span>
+                  </div>
+                  <div class="flex items-center">
+                    <i class="fa-solid fa-bath"></i>
+                    <span class="ml-1">1</span>
+                  </div>
+                  <div class="flex items-center">
+                    <i class="fa-solid fa-ruler-combined"></i>
+                    <span class="ml-1">400</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="">
+        <div class="relative">
+          <img src="/dist/img/listing-6.png" alt="Luxury Family Home" class="w-full">
+          <div class="absolute top-2 left-2 flex space-x-2">
+            <span class="bg-green-800 text-white text-xs font-bold px-2 py-1 rounded">FOR SALE</span>
+            <span class="bg-yellow-500 text-white text-xs font-bold px-2 py-1 rounded">FEATURED</span>
+          </div>
+          <div class="absolute bottom-0 left-0 right-0 p-6">
+            <div class="bg-white bg-opacity-80 p-4">
+              <h3 class="text-lg font-semibold">Luxury Family Home</h3>
+              <p class="text-gray-600">1800-1818 79th St</p>
+              <div class="flex justify-between items-center mt-2">
+                <p class="text-red-500 text-xl font-bold">$395,000</p>
+                <div class="flex items-center space-x-4 text-gray-600 text-sm">
+                  <div class="flex items-center">
+                    <i class="fa-solid fa-bed"></i>
+                    <span class="ml-1">4</span>
+                  </div>
+                  <div class="flex items-center">
+                    <i class="fa-solid fa-bath"></i>
+                    <span class="ml-1">1</span>
+                  </div>
+                  <div class="flex items-center">
+                    <i class="fa-solid fa-ruler-combined"></i>
+                    <span class="ml-1">400</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    <!-- Repeat similar blocks for other cards, updating content as necessary -->
+</div>
+<!-- New Listing Update -->
+  
+  
+
+
+<!-- Why Invest in Bali -->
+<section id="why" class="pt-10 pb-10">
+    <div class="container">
+        <div class="flex flex-wrap items-start">
+            <div class="w-full">
+                <div class="flex items-center mb-10"> 
+                    <h3 class="text-3xl text-primary font-semibold mr-5 pb-1">Why Invest in Bali?</h3>
+                    <div class="flex-grow bg-primary h-px"></div>
+                </div>
+            </div>           
+        </div>
+        <div class="flex flex-wrap md:flex-nowrap md:gap-10 lg:gap-20">
+            <div class="w-1/3">
+                <h1 class="text-5xl font-semibold text-primary mb-8">Top 5</h1>
+                <h3 class="text-xl text-zinc-700 font-semibold mb-4">IN THE RANKING OF TRAVELERS FAVOURITE DESTINATIONS</h3>
+                <p class="text-sm text-slate-500 text-justify leading-6">In 2017 and for the first time, Bali was named global winner of TripAdvisor Traveler's Choice Awards, which identifies the best destinations in the world. The Indonesian island even dethrones London from its rank.</p>
+            </div>
+            <div class="w-1/3">
+                <h1 class="text-5xl font-semibold text-primary mb-8">7.7%</h1>
+                <h3 class="text-xl text-zinc-700 font-semibold mb-4">GROWTH</h3>
+                <p class="text-sm text-slate-500 text-justify leading-6">Indonesian growth is impressive. Investing today in Bali means benefiting from growth that increases at the speed of a galloping horse. With 7.7% growth, who can compete within the European Union? Indonesia's GDP increases by 7.7% over one year to pass the 1.1 trillion dollars mark, or 79 billion more than in 2018, according to the IMF.</p>
+            </div>
+            <div class="w-1/3">
+                <h1 class="text-5xl font-semibold text-primary mb-8">24 Millions</h1>
+                <h3 class="text-xl text-zinc-700 font-semibold mb-4">TOURISTS</h3>
+                <p class="text-sm text-slate-500 text-justify leading-6">Bali recorded more than 6.3 million tourists in 2019, an increase of more than 6.5% compared to 2018. There are also 17.7 Million Indonesian tourists who transited through Bali in 2019. Bali is preparing to receive more than 37 million tourists by 2026.</p>
+            </div>         
+        </div>
+    </div>
+</section>
+<!-- Why Invest in Bali -->
+
+<!-- Send Section -->
+<section id="send" class="pt-20 pb-20 bg-primary">
+    <div class="container flex justify-center md:gap-10 lg:gap-20">
+        <div class="w-1/3 flex flex-col items-center">
+            <div class="flex flex-col items-center justify-center mb-5">
+                <img src="dist/img/mail2.svg (1).png" alt="mail-svg" class="mb-3">
+                <h1 class="text-3xl text-white text-center mb-3">Stay Up to Date</h1>
+                <p class="text-sm text-white text-center">Subscribe to our newsletter to receive our weekly feed.</p>
+            </div>
+            <div class="flex justify-center w-full">
+                <div class="relative w-full">
+                    <input class="form-input w-full p-3 ps-6 rounded-full" type="text" placeholder="Your Mail" aria-label="Search" autocomplete="off">
+                    <button id="searchButton" class="absolute inset-y-0 right-1 top-1 bottom-1 flex items-center p-3" type="submit">
+                        <p class="text-primary hover:text-green-800 transition duration-500 ease-in-out"><span class="pe-1 font-semibold">Send</span><i class="fas fa-arrow-right" style="font-size: 15px;"></i></p>
+                    </button>
+                </div>                
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Of Send Section -->
+
+
+<!-- Footer -->
+<footer class="p-4 bg-zinc-800">
+    <div class="container">
+        <div class="w-full flex justify-between items-center py-2">
+            <div class="flex-1">
+                <h1 class="text-left text-sm text-white">Copyright © We Provide Property Bali, 2024</h1>
+            </div>
+            <div class="flex-1 flex justify-center">
+                <img src="dist/img/logo-putih2.png" alt="wpp-logo" class="h-10">
+            </div>
+            <div class="flex-1 flex justify-end space-x-4">
+                <a href="https://www.facebook.com" target="_blank" class="text-white">
+                    <i class="fab fa-facebook fa-lg"></i>
+                </a>
+                <a href="https://www.twitter.com" target="_blank" class="text-white">
+                    <i class="fab fa-twitter fa-lg"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" class="text-white">
+                    <i class="fab fa-instagram fa-lg"></i>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" class="text-white">
+                    <i class="fab fa-linkedin fa-lg"></i>
+                </a>
+            </div>
+        </div>
+    </div>    
+</footer>
+<!-- Footer -->
+
+</body>
+</html>
