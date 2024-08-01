@@ -8,6 +8,8 @@
     <link rel="icon" href="dist/img/logo-hitam.png" class="rounded-circle" alt="logo-tab">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body>
 
@@ -23,7 +25,7 @@
 <section>
     <div class="h-screen bg-cover bg-center" style="background-image: url('dist/img/hero-section.png'); position: relative;">
         <div class="p-5">
-            <nav class="bg-white bg-opacity-90 p-5 rounded-full shadow-md z-20 relative">
+            <nav class="bg-white bg-opacity-90 py-5 px-10 rounded-full shadow-md z-20 relative">
                 <div class="mx-auto flex justify-between items-center">
                     <div class="flex items-center space-x-5">
                         <img src="dist/img/logo-hitam2.png" alt="wpp-logo" class="h-10">
@@ -56,10 +58,10 @@
                                         class="bg-white border rounded-sm absolute top-0 right-0 
                                         transition duration-150 ease-in-out origin-top-left min-w-40">
                                         <li class="px-3 py-1 hover:bg-gray-100">
-                                            <a href="/villa-for-rent" class="block w-full h-full text-black hover:text-primary">Villa For Rent</a>
+                                            <a href="/villa-for-rent" class="block w-full h-full text-black hover:text-primary">Villa For Sale</a>
                                         </li>
                                         <li class="px-3 py-1 hover:bg-gray-100">
-                                            <a href="/villa-for-sale" class="block w-full h-full text-black hover:text-primary">Villa For Sale</a>
+                                            <a href="/villa-for-sale" class="block w-full h-full text-black hover:text-primary">Land For Sale</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -77,31 +79,94 @@
                                         class="bg-white border rounded-sm absolute top-0 right-0 
                                         transition duration-150 ease-in-out origin-top-left min-w-40">
                                         <li class="px-3 py-1 hover:bg-gray-100">
-                                            <a href="/leasehold-villa-for-rent" class="block w-full h-full text-black hover:text-primary">Villa For Rent</a>
+                                            <a href="/leasehold-villa-for-rent" class="block w-full h-full text-black hover:text-primary">Villa For Sale</a>
                                         </li>
                                         <li class="px-3 py-1 hover:bg-gray-100">
-                                            <a href="/leasehold-villa-for-sale" class="block w-full h-full text-black hover:text-primary">Villa For Sale</a>
+                                            <a href="/leasehold-villa-for-sale" class="block w-full h-full text-black hover:text-primary">Land For Sale</a>
                                         </li>
                                     </ul>
                                 </li>
+                                <!-- Rent Option -->
+                                <li class="rounded-sm relative px-3 py-1 hover:bg-gray-100">
+                                  <button
+                                      aria-haspopup="true"
+                                      aria-controls="menu-lang-python2"
+                                      class="w-full text-left flex items-center outline-none focus:outline-none min-w-32">
+                                      <span class="pr-1 flex-1 text-black hover:text-primary">Rental</span>
+                                  </button>
+                                  <ul
+                                      id="menu-lang-python2"
+                                      aria-hidden="true"
+                                      class="bg-white border rounded-sm absolute top-0 right-0 transition duration-150 ease-in-out origin-top-left min-w-40">
+                                      <li class="px-3 py-1 hover:bg-gray-100 relative">
+                                          <button
+                                              aria-haspopup="true"
+                                              aria-controls="menu-lang-monthly"
+                                              class="w-full text-left flex items-center outline-none focus:outline-none min-w-32">
+                                              <span class="pr-1 flex-1 text-black hover:text-primary">Villa</span>
+                                          </button>
+                                          <ul
+                                              id="menu-lang-monthly"
+                                              aria-hidden="true"
+                                              class="bg-white border rounded-sm absolute top-0 right-0 mt-1 transition duration-150 ease-in-out origin-top-left min-w-40">
+                                              <li class="px-3 py-1 hover:bg-gray-100">
+                                                  <a href="/monthly-villa" class="block w-full h-full text-black hover:text-primary">Monthly</a>
+                                              </li>
+                                              <li class="px-3 py-1 hover:bg-gray-100">
+                                                <a href="/monthly-villa" class="block w-full h-full text-black hover:text-primary">Yearly</a>
+                                            </li>
+                                              <!-- Tambahkan item menu lainnya di sini jika diperlukan -->
+                                          </ul>
+                                      </li>
+                                      <li class="px-3 py-1 hover:bg-gray-100 relative">
+                                          <button
+                                              aria-haspopup="true"
+                                              aria-controls="menu-lang-yearly"
+                                              class="w-full text-left flex items-center outline-none focus:outline-none min-w-32">
+                                              <span class="pr-1 flex-1 text-black hover:text-primary">Land</span>
+                                          </button>
+                                          <ul
+                                              id="menu-lang-yearly"
+                                              aria-hidden="true"
+                                              class="bg-white border rounded-sm absolute top-0 right-0 mt-1 transition duration-150 ease-in-out origin-top-left min-w-40">
+                                              <li class="px-3 py-1 hover:bg-gray-100">
+                                                  <a href="/yearly-villa" class="block w-full h-full text-black hover:text-primary">Monthly</a>
+                                              </li>
+                                              <li class="px-3 py-1 hover:bg-gray-100">
+                                                <a href="/yearly-villa" class="block w-full h-full text-black hover:text-primary">Yearly</a>
+                                            </li>
+                                              <!-- Tambahkan item menu lainnya di sini jika diperlukan -->
+                                          </ul>
+                                      </li>
+                                  </ul>
+                              </li>
+                              
                             </ul>
                         </div>
                         
-                        <a href="#guide" class="text-black hover:text-primary">Guide</a>
+                        <a href="guide.html" class="text-black hover:text-primary">Guide</a>
                         <a href="#faq" class="text-black hover:text-primary">FAQ</a>
                         <a href="#about" class="text-black hover:text-primary">About</a>
                         <a href="#contact" class="text-black hover:text-primary">Contact</a>
                     </div>
-                    <div class="flex justify-center">
-                        <form class="flex w-full" method="GET">
-                            <div class="relative w-full">
-                                <input class="form-input w-full p-3 ps-6 rounded-full border border-gray-300" type="text" placeholder="Search" aria-label="Search" autocomplete="off">
-                                <button id="searchButton" class="absolute inset-y-0 right-1 top-1 bottom-1 flex items-center p-3 bg-primary text-white border-black rounded-full hover:bg-green-950 transition duration-500 ease-in-out" type="submit">
-                                    <i class="fas fa-search w-6" style="font-size: 17px;"></i>
-                                </button>
-                            </div>
-                        </form>
-                    </div>
+                    <div class="flex items-center space-x-4">
+                      <!-- Button -->
+                      <a href="/list-property" class="bg-primary text-white py-2 px-4 rounded-full hover:bg-green-950 transition duration-500 ease-in-out">
+                          List Property with Us
+                      </a>
+                      <!-- Social Media Icons -->
+                        <div class="flex justify-center space-x-4">
+                            <a href="https://www.whatsapp.com" target="_blank" class="text-black">
+                                <i class="fab fa-whatsapp fa-lg"></i> <!-- Ikon WhatsApp -->
+                            </a>
+                            <a href="https://www.address.com" target="_blank" class="text-black">
+                                <i class="fas fa-map-marker-alt fa-lg"></i> <!-- Ikon Maps -->
+                            </a>
+                            <a href="mailto:someone@example.com" target="_blank" class="text-black">
+                                <i class="fas fa-envelope fa-lg"></i> <!-- Ikon Email -->
+                            </a>
+                        </div>
+                    </div>                                  
                 </div>
             </nav>
             <div class="absolute inset-0 flex items-center justify-center space-x-5 z-10">
@@ -113,8 +178,13 @@
                         <h1 class="text-6xl text-center text-primary mb-5">Believe in finding it</h1>
                         <p class="text-base text-center text-primary mb-10">Search properties for sale and to rent in Bali</p>
                     </div>
-                    <div class="w-full 2xl:px-28">
+                    <div class="w-full 2xl:px-10">
                         <div class="bg-white py-6 shadow-lg flex gap-4 justify-center items-center flex-wrap rounded-2xl">
+                            <!-- Code/Ref -->
+                            <div class="flex flex-col">
+                              <label for="code-ref" class="text-primary font-medium ps-1 mb-1">Code/Ref</label>
+                              <input id="code-ref" type="text" placeholder="Enter Code/Ref" class="border border-gray-300 rounded-md p-2 w-32">
+                            </div>
                             <!-- Location -->
                             <div class="flex flex-col">
                                 <label for="location" class="text-primary font-medium ps-1 mb-1">Location</label>
@@ -126,7 +196,6 @@
                                     <option value="uluwatu">Uluwatu</option>
                                 </select>
                             </div>
-                    
                             <!-- Type -->
                             <div class="flex flex-col">
                                 <label for="type" class="text-primary font-medium ps-1 mb-1">Type</label>
@@ -196,13 +265,13 @@
               <div class="relative">
                 <img src="dist/img/listing-1.png" alt="Luxury Family Home" class="w-full">
                 <div class="absolute top-2 left-2 flex space-x-2">
-                  <span class="bg-green-800 text-white text-xs font-bold px-2 py-1 rounded">FOR SALE</span>
-                  <span class="bg-yellow-500 text-white text-xs font-bold px-2 py-1 rounded">FEATURED</span>
+                  <span class="bg-green-800 text-white text-xs font-bold px-2 py-1 rounded">FREEHOLD</span>
+                  <span class="bg-yellow-500 text-white text-xs font-bold px-2 py-1 rounded">Ocean View</span>
                 </div>
-                <div class="absolute bottom-0 left-0 right-0 p-6">
+                <div class="absolute bottom-0 left-0 right-0 p-3">
                   <div class="bg-white bg-opacity-80 p-4">
                     <h3 class="text-lg font-semibold">Luxury Family Home</h3>
-                    <p class="text-gray-600">1800-1818 79th St</p>
+                    <p class="text-gray-600">Denpasar Barat</p>
                     <div class="flex justify-between items-center mt-2">
                       <p class="text-red-500 text-xl font-bold">$395,000</p>
                       <div class="flex items-center space-x-4 text-gray-600 text-sm">
@@ -228,13 +297,13 @@
                 <div class="relative">
                   <img src="dist/img/listing-2.png" alt="Luxury Family Home" class="w-full">
                   <div class="absolute top-2 left-2 flex space-x-2">
-                    <span class="bg-green-800 text-white text-xs font-bold px-2 py-1 rounded">FOR SALE</span>
-                    <span class="bg-yellow-500 text-white text-xs font-bold px-2 py-1 rounded">FEATURED</span>
+                    <span class="bg-green-800 text-white text-xs font-bold px-2 py-1 rounded">LEASEHOLD</span>
+                    <span class="bg-yellow-500 text-white text-xs font-bold px-2 py-1 rounded">Ocean View</span>
                   </div>
-                  <div class="absolute bottom-0 left-0 right-0 p-6">
+                  <div class="absolute bottom-0 left-0 right-0 p-3">
                     <div class="bg-white bg-opacity-80 p-4">
                       <h3 class="text-lg font-semibold">Luxury Family Home</h3>
-                      <p class="text-gray-600">1800-1818 79th St</p>
+                      <p class="text-gray-600">Sunset Road, 17</p>
                       <div class="flex justify-between items-center mt-2">
                         <p class="text-red-500 text-xl font-bold">$395,000</p>
                         <div class="flex items-center space-x-4 text-gray-600 text-sm">
@@ -250,6 +319,10 @@
                             <i class="fa-solid fa-ruler-combined"></i>
                             <span class="ml-1">400</span>
                           </div>
+                          <div class="flex items-center">
+                            <i class="fa-solid fa-calendar-days"></i> <!-- Icon for years -->
+                            <span class="ml-1">29 yrs</span>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -260,13 +333,13 @@
                 <div class="relative">
                   <img src="dist/img/listing-3.png" alt="Luxury Family Home" class="w-full">
                   <div class="absolute top-2 left-2 flex space-x-2">
-                    <span class="bg-green-800 text-white text-xs font-bold px-2 py-1 rounded">FOR SALE</span>
-                    <span class="bg-yellow-500 text-white text-xs font-bold px-2 py-1 rounded">FEATURED</span>
+                    <span class="bg-green-800 text-white text-xs font-bold px-2 py-1 rounded">LEASEHOLD</span>
+                    <span class="bg-yellow-500 text-white text-xs font-bold px-2 py-1 rounded">Ocean View</span>
                   </div>
-                  <div class="absolute bottom-0 left-0 right-0 p-6">
+                  <div class="absolute bottom-0 left-0 right-0 p-3">
                     <div class="bg-white bg-opacity-80 p-4">
                       <h3 class="text-lg font-semibold">Luxury Family Home</h3>
-                      <p class="text-gray-600">1800-1818 79th St</p>
+                      <p class="text-gray-600">Ubud Palimanan</p>
                       <div class="flex justify-between items-center mt-2">
                         <p class="text-red-500 text-xl font-bold">$395,000</p>
                         <div class="flex items-center space-x-4 text-gray-600 text-sm">
@@ -292,13 +365,13 @@
                 <div class="relative">
                   <img src="dist/img/listing-4.png" alt="Luxury Family Home" class="w-full">
                   <div class="absolute top-2 left-2 flex space-x-2">
-                    <span class="bg-green-800 text-white text-xs font-bold px-2 py-1 rounded">FOR SALE</span>
-                    <span class="bg-yellow-500 text-white text-xs font-bold px-2 py-1 rounded">FEATURED</span>
+                    <span class="bg-green-800 text-white text-xs font-bold px-2 py-1 rounded">FREEHOLD</span>
+                    <span class="bg-yellow-500 text-white text-xs font-bold px-2 py-1 rounded">Ocean View</span>
                   </div>
-                  <div class="absolute bottom-0 left-0 right-0 p-6">
+                  <div class="absolute bottom-0 left-0 right-0 p-3">
                     <div class="bg-white bg-opacity-80 p-4">
                       <h3 class="text-lg font-semibold">Luxury Family Home</h3>
-                      <p class="text-gray-600">1800-1818 79th St</p>
+                      <p class="text-gray-600">Uluwatu Hills</p>
                       <div class="flex justify-between items-center mt-2">
                         <p class="text-red-500 text-xl font-bold">$395,000</p>
                         <div class="flex items-center space-x-4 text-gray-600 text-sm">
@@ -324,13 +397,13 @@
                 <div class="relative">
                   <img src="dist/img/listing-5.png" alt="Luxury Family Home" class="w-full">
                   <div class="absolute top-2 left-2 flex space-x-2">
-                    <span class="bg-green-800 text-white text-xs font-bold px-2 py-1 rounded">FOR SALE</span>
-                    <span class="bg-yellow-500 text-white text-xs font-bold px-2 py-1 rounded">FEATURED</span>
+                    <span class="bg-green-800 text-white text-xs font-bold px-2 py-1 rounded">LEASEHOLD</span>
+                    <span class="bg-yellow-500 text-white text-xs font-bold px-2 py-1 rounded">Ocean View</span>
                   </div>
-                  <div class="absolute bottom-0 left-0 right-0 p-6">
+                  <div class="absolute bottom-0 left-0 right-0 p-3">
                     <div class="bg-white bg-opacity-80 p-4">
                       <h3 class="text-lg font-semibold">Luxury Family Home</h3>
-                      <p class="text-gray-600">1800-1818 79th St</p>
+                      <p class="text-gray-600">Tanah Lot Street</p>
                       <div class="flex justify-between items-center mt-2">
                         <p class="text-red-500 text-xl font-bold">$395,000</p>
                         <div class="flex items-center space-x-4 text-gray-600 text-sm">
@@ -356,13 +429,13 @@
                 <div class="relative">
                   <img src="dist/img/listing-6.png" alt="Luxury Family Home" class="w-full">
                   <div class="absolute top-2 left-2 flex space-x-2">
-                    <span class="bg-green-800 text-white text-xs font-bold px-2 py-1 rounded">FOR SALE</span>
-                    <span class="bg-yellow-500 text-white text-xs font-bold px-2 py-1 rounded">FEATURED</span>
+                    <span class="bg-green-800 text-white text-xs font-bold px-2 py-1 rounded">FREEHOLD</span>
+                    <span class="bg-yellow-500 text-white text-xs font-bold px-2 py-1 rounded">Ocean View</span>
                   </div>
-                  <div class="absolute bottom-0 left-0 right-0 p-6">
+                  <div class="absolute bottom-0 left-0 right-0 p-3">
                     <div class="bg-white bg-opacity-80 p-4">
                       <h3 class="text-lg font-semibold">Luxury Family Home</h3>
-                      <p class="text-gray-600">1800-1818 79th St</p>
+                      <p class="text-gray-600">Canggu Selatan</p>
                       <div class="flex justify-between items-center mt-2">
                         <p class="text-red-500 text-xl font-bold">$395,000</p>
                         <div class="flex items-center space-x-4 text-gray-600 text-sm">
@@ -378,13 +451,16 @@
                             <i class="fa-solid fa-ruler-combined"></i>
                             <span class="ml-1">400</span>
                           </div>
+                          <div class="flex items-center">
+                            <i class="fa-solid fa-calendar-days"></i> <!-- Icon for years -->
+                            <span class="ml-1">29 yrs</span>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            
             <!-- Repeat similar blocks for other cards, updating content as necessary -->
         </div>
         <div class="flex justify-center">
@@ -397,72 +473,176 @@
 </section>
 <!-- New Listing -->
 
-<!-- Why Invest in Bali -->
-<section id="why" class="pt-10 pb-10">
-    <div class="container">
-        <div class="flex flex-wrap items-start">
-            <div class="w-full">
-                <div class="flex items-center mb-10"> 
-                    <h3 class="text-3xl text-primary font-semibold mr-5 pb-1">Why Invest in Bali?</h3>
-                    <div class="flex-grow bg-primary h-px"></div>
-                </div>
-            </div>           
+<!-- Explore the Hot Investment Areas in Bali -->
+<section id="explore" class="pt-10 pb-10" style="background-image: url('dist/img/hero-section.png'); position: relative;">
+  <div class="container">
+    <div class="flex flex-col items-center justify-center min-h-screen py-10">
+      <div class="w-[75%]">
+        <div class="text-center mb-8">
+          <h3 class="text-3xl text-primary font-semibold pb-1">EXPLORE THE HOT INVESTMENT AREAS IN BALI</h3>
+          <p class="mx-auto text-gray-600 leading-6 max-w-2xl">
+            Explore Our Available Villas in Bali's Most Developing Areas
+          </p>
         </div>
-        <div class="flex flex-wrap md:flex-nowrap md:gap-10 lg:gap-20">
-            <div class="w-1/3">
-                <h1 class="text-5xl font-semibold text-primary mb-8">Top 5</h1>
-                <h3 class="text-xl text-zinc-700 font-semibold mb-4">IN THE RANKING OF TRAVELERS FAVOURITE DESTINATIONS</h3>
-                <p class="text-sm text-slate-500 text-justify leading-6">In 2017 and for the first time, Bali was named global winner of TripAdvisor Traveler's Choice Awards, which identifies the best destinations in the world. The Indonesian island even dethrones London from its rank.</p>
+        <div class="bg-white pb-6 rounded-lg">
+          <div class="flex flex-wrap md:flex-nowrap justify-center md:gap-10 lg:gap-20 p-4 bg-slate-100 rounded-t-lg">
+            <div class="w-full md:w-1/4 flex flex-col items-center">
+              <img src="dist/img/h41.png.png" alt="Logo Icon 1" class="w-16 h-14 mb-4 cursor-pointer" onclick="showContent('canggu')">
+              <h3 class="text-xl text-zinc-700 font-semibold text-center cursor-pointer" onclick="showContent('canggu')">Canggu</h3>
             </div>
-            <div class="w-1/3">
-                <h1 class="text-5xl font-semibold text-primary mb-8">7.7%</h1>
-                <h3 class="text-xl text-zinc-700 font-semibold mb-4">GROWTH</h3>
-                <p class="text-sm text-slate-500 text-justify leading-6">Indonesian growth is impressive. Investing today in Bali means benefiting from growth that increases at the speed of a galloping horse. With 7.7% growth, who can compete within the European Union? Indonesia's GDP increases by 7.7% over one year to pass the 1.1 trillion dollars mark, or 79 billion more than in 2018, according to the IMF.</p>
+            <div class="w-full md:w-1/4 flex flex-col items-center">
+              <img src="dist/img/h41.png.png" alt="Logo Icon 2" class="w-16 h-14 mb-4 cursor-pointer" onclick="showContent('uluwatu')">
+              <h3 class="text-xl text-zinc-700 font-semibold text-center cursor-pointer" onclick="showContent('uluwatu')">Uluwatu</h3>
             </div>
-            <div class="w-1/3">
-                <h1 class="text-5xl font-semibold text-primary mb-8">24 Millions</h1>
-                <h3 class="text-xl text-zinc-700 font-semibold mb-4">TOURISTS</h3>
-                <p class="text-sm text-slate-500 text-justify leading-6">Bali recorded more than 6.3 million tourists in 2019, an increase of more than 6.5% compared to 2018. There are also 17.7 Million Indonesian tourists who transited through Bali in 2019. Bali is preparing to receive more than 37 million tourists by 2026.</p>
+            <div class="w-full md:w-1/4 flex flex-col items-center">
+              <img src="dist/img/h41.png.png" alt="Logo Icon 3" class="w-16 h-14 mb-4 cursor-pointer" onclick="showContent('ubud')">
+              <h3 class="text-xl text-zinc-700 font-semibold text-center cursor-pointer" onclick="showContent('ubud')">Ubud</h3>
             </div>         
+          </div>
+          <div class="text-center mt-4" id="content">
+            <!-- Konten Default -->
+            <h3 class="text-xl text-primary font-semibold pb-6">Ubud</h3>
+            <p class="mx-auto text-gray-600 leading-6 max-w-2xl">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic assumenda itaque cupiditate eveniet voluptates consectetur distinctio eum sed dignissimos quasi porro delectus qui blanditiis magni, ad modi praesentium corrupti doloremque, voluptatibus mollitia? Molestiae minima est dolores doloremque aspernatur sit maiores?
+            </p>
+            <div class="flex justify-center pt-6">
+              <button class="bg-primary text-white py-2 px-6 rounded-full hover:bg-green-950 transition duration-500 ease-in-out">See Villas</button>              
+            </div>
+          </div>
         </div>
+      </div>
     </div>
+    
+  </div>
 </section>
-<!-- Why Invest in Bali -->
+<!-- Explore the Hot Investment Areas in Bali -->
 
-<!-- Send Section -->
-<section id="send" class="pt-20 pb-20 bg-primary">
-    <div class="container flex justify-center md:gap-10 lg:gap-20">
-        <div class="w-1/3 flex flex-col items-center">
-            <div class="flex flex-col items-center justify-center mb-5">
-                <img src="dist/img/mail2.svg (1).png" alt="mail-svg" class="mb-3">
-                <h1 class="text-3xl text-white text-center mb-3">Stay Up to Date</h1>
-                <p class="text-sm text-white text-center">Subscribe to our newsletter to receive our weekly feed.</p>
-            </div>
-            <div class="flex justify-center w-full">
-                <div class="relative w-full">
-                    <input class="form-input w-full p-3 ps-6 rounded-full" type="text" placeholder="Your Mail" aria-label="Search" autocomplete="off">
-                    <button id="searchButton" class="absolute inset-y-0 right-1 top-1 bottom-1 flex items-center p-3" type="submit">
-                        <p class="text-primary hover:text-green-800 transition duration-500 ease-in-out"><span class="pe-1 font-semibold">Send</span><i class="fas fa-arrow-right" style="font-size: 15px;"></i></p>
-                    </button>
-                </div>                
-            </div>
+<!-- Our Agency Services -->
+<section id="services"  class="pt-16 pb-16">
+  <div class="container">
+    <div class="flex flex-wrap">
+      <div class="w-full">
+        <!-- Centering the text and paragraph -->
+        <div class="text-center mb-8">
+          <h3 class="text-3xl text-primary font-semibold pb-1">Our Agency Services</h3>
+          <p class="mx-auto text-gray-600 leading-6 max-w-2xl">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio corporis atque id esse provident iusto, non amet neque corrupti, eum dicta. Aut ut quibusdam accusamus illum libero commodi, mollitia, fuga esse obcaecati quod quasi odio dolorem eum eos cumque!
+          </p>
         </div>
+        <!-- Services Section -->
+        <div class="flex flex-wrap md:flex-nowrap md:gap-10 lg:gap-20">
+          <div class="w-full md:w-1/3">
+            <img src="dist/img/Vector.png" alt="Logo Icon 1" class="w-14 h-14 mx-auto mb-4">
+            <h3 class="text-xl text-zinc-700 font-semibold mb-4 text-center">Sales of Villa and Land</h3>
+            <p class="text-sm text-slate-500 text-justify leading-6">
+              Bali recorded more than 6.3 million tourists in 2019, an increase of more than 6.5% compared to 2018. There are also 17.7 Million Indonesian tourists who transited through Bali in 2019. Bali is preparing to receive more than 37 million tourists by 2026.
+            </p>
+          </div>
+          <div class="w-full md:w-1/3">
+            <img src="dist/img/Vector (1).png" alt="Logo Icon 2" class="w-14 h-14 mx-auto mb-4">
+            <h3 class="text-xl text-zinc-700 font-semibold mb-4 text-center">Services Support to the Clients</h3>
+            <p class="text-sm text-slate-500 text-justify leading-6">
+              Bali recorded more than 6.3 million tourists in 2019, an increase of more than 6.5% compared to 2018. There are also 17.7 Million Indonesian tourists who transited through Bali in 2019. Bali is preparing to receive more than 37 million tourists by 2026.
+            </p>
+          </div>
+          <div class="w-full md:w-1/3">
+            <img src="dist/img/Vector (2).png" alt="Logo Icon 3" class="w-14 h-14 mx-auto mb-4">
+            <h3 class="text-xl text-zinc-700 font-semibold mb-4 text-center">Villa Management</h3>
+            <p class="text-sm text-slate-500 text-justify leading-6">
+              Bali recorded more than 6.3 million tourists in 2019, an increase of more than 6.5% compared to 2018. There are also 17.7 Million Indonesian tourists who transited through Bali in 2019. Bali is preparing to receive more than 37 million tourists by 2026.
+            </p>
+          </div>         
+        </div>
+        
+      </div>
     </div>
+  </div>
 </section>
-<!-- End Of Send Section -->
+<!-- Our Agency Services -->
 
+<!-- Contact Us -->
+<section id="contact-us" class="pt-16 pb-16 relative overflow-hidden" style="background-image: url('dist/img/hero-section.png'); background-size: cover; background-position: center;">
+  <div class="absolute inset-0 bg-black opacity-50"></div> <!-- Black Overlay -->
 
-<!-- Footer -->
-<footer class="p-4 bg-zinc-800">
-    <div class="container">
-        <div class="w-full flex justify-between items-center py-2">
-            <div class="flex-1">
-                <h1 class="text-left text-sm text-white">Copyright © We Provide Property Bali, 2024</h1>
-            </div>
-            <div class="flex-1 flex justify-center">
-                <img src="dist/img/logo-putih2.png" alt="wpp-logo" class="h-10">
-            </div>
-            <div class="flex-1 flex justify-end space-x-4">
+  <div class="container relative z-10">
+    <div class="flex flex-wrap">
+      <div class="w-full">
+        <div class="flex flex-wrap md:flex-nowrap md:gap-10 lg:gap-20">
+          <div class="w-full md:w-1/3">
+              <h3 class="text-xl text-white font-semibold mb-9">CONTACT US</h3>
+              <h5 class="text-lg text-white font-semibold leading-9">+6287 87706 4440</h5>
+              <p class="text-sm text-white text-justify leading-9"><a href="mailto:someone@example.com" target="_blank" class="text-white">
+                <i class="fas fa-envelope fa-lg"></i> <!-- Ikon Maps -->
+              </a>admin@weprovidepropertybali.com</p>
+              <p class="text-sm text-white text-justify leading-9"><a href="https://www.address.com" target="_blank" class="text-white">
+                <i class="fas fa-home fa-lg"></i> <!-- Ikon Maps -->
+              </a>Jalan Mawar Asri, No. 01 Canggu - Bali</p>
+              <p class="text-sm text-white text-justify leading-9"><a href="https://www.address.com" target="_blank" class="text-white">
+                <i class="fas fa-map-marker-alt fa-lg"></i> <!-- Ikon Maps -->
+              </a>View Our Location on Maps</p>
+          </div>
+          <div class="w-full md:w-1/3">
+            <h3 class="text-xl text-white font-semibold mb-9">SEND US A MESSAGE</h3>            
+            <form action="send_email.php" method="POST" class="space-y-4">
+              <div>
+                <label for="name" class="block text-sm font-medium text-white">Name</label>
+                <input type="text" id="name" name="name" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-500 sm:text-sm" />
+              </div>
+          
+              <div>
+                <label for="email" class="block text-sm font-medium text-white">Email</label>
+                <input type="email" id="email" name="email" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-500 sm:text-sm" />
+              </div>
+          
+              <div>
+                <label for="phone" class="block text-sm font-medium text-white">Phone</label>
+                <input type="tel" id="phone" name="phone" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-500 sm:text-sm" />
+              </div>
+          
+              <div>
+                <label for="subject" class="block text-sm font-medium text-white">Subject</label>
+                <input type="text" id="subject" name="subject" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-500 sm:text-sm" />
+              </div>
+            </form>
+          </div>
+          
+          <div class="w-full md:w-1/3">
+            <h3 class="text-xl text-white font-semibold mb-16"></h3>
+            <form action="send_email.php" method="POST" class="space-y-4">
+              <div>
+                <label for="message" class="block text-sm font-medium text-white">Message</label>
+                <textarea id="message" name="message" rows="4" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-500 sm:text-sm"></textarea>
+              </div>
+              <div>
+                <p class="text-base text-white">This site is protected by re-CAPTCHA and the Google <span class="text-yellow-500">Privacy Policy</span> and <span class="text-yellow-500">Terms of Service</span> apply.</p>
+              </div>
+              <div>
+                <button type="submit" class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-yellow-500 hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500">
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>         
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Us -->
+
+<!-- Footer Usefull links-->
+<section id="footer" class="pt-10 pb-10 bg-zinc-800">
+  <div class="container">
+    <div class="flex flex-wrap">
+      <div class="w-full">
+        <div class="flex flex-wrap md:flex-nowrap md:gap-10 lg:gap-20">
+          <div class="w-full md:w-[60%]">
+              <h3 class="text-xl text-white font-semibold mb-4">WE PROVIDE PROPERTY BALI</h3>
+              <p class="text-sm text-white text-justify leading-6 mb-4">
+                Suasa Real Estate is an European managed real estate agency with more than 15 years of experience in the real estate business, residential, offices, retail and mixed, in Europe, Middle East and South-East Asia. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia possimus velit earum, pariatur vel voluptate.
+              </p>
+              <div class="flex-1 flex space-x-4">
                 <a href="https://www.facebook.com" target="_blank" class="text-white">
                     <i class="fab fa-facebook fa-lg"></i>
                 </a>
@@ -476,10 +656,93 @@
                     <i class="fab fa-linkedin fa-lg"></i>
                 </a>
             </div>
-        </div>
-    </div>    
-</footer>
-<!-- Footer -->
+          </div>
+          <div class="w-full md:w-[20%]">
+            <h3 class="text-xl text-white font-semibold mb-4">USEFUL LINKS</h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="/" class="text-base text-white hover:text-yellow-500">Home</a>
+              </li>
+              <li>
+                <a href="/guide" class="text-base text-white hover:text-yellow-500">Guide</a>
+              </li>
+              <li>
+                <a href="/faq" class="text-base text-white hover:text-yellow-500">FAQ</a>
+              </li>
+              <li>
+                <a href="/about" class="text-base text-white hover:text-yellow-500">About</a>
+              </li>
+              <li>
+                <a href="/contact" class="text-base text-white hover:text-yellow-500">Contact</a>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="w-full md:w-[20%]">
+            <h3 class="text-xl text-white font-semibold mb-4">CERTIFIED BY</h3>
+            <img src="dist/img/logo-putih2.png" alt="wpp-logo" class="h-10 mb-4">
+          
+            <div class="flex space-x-4 text-center">
+              <!-- Bitcoin Icon -->
+              <a href="https://www.bitcoin.org" target="_blank" class="text-white hover:text-yellow-500">
+                <i class="fab fa-bitcoin fa-2x"></i>
+              </a>
 
+               <!-- Bitcoinc Sign -->
+               <a href="https://www.litecoin.org" target="_blank" class="text-white hover:text-yellow-500">
+                <i class="fa-solid fa-bitcoin-sign fa-2x"></i>
+              </a>
+          
+              <!-- Ethereum Icon -->
+              <a href="https://www.ethereum.org" target="_blank" class="text-white hover:text-yellow-500">
+                <i class="fab fa-ethereum fa-2x"></i>
+              </a>
+
+              <!-- Litecoin Icon -->
+              <a href="https://www.ripple.com" target="_blank" class="text-white hover:text-yellow-500">
+                <i class="fa-solid fa-litecoin-sign fa-2x"></i>
+              </a>
+              <!-- Add more icons as needed -->
+            </div>
+          </div> 
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Footer Usefull links-->
+
+
+<script>
+  function showContent(location) {
+    const content = {
+      canggu: {
+        title: 'Canggu',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto non totam iste deleniti, sunt distinctio quo voluptas, temporibus vel minus deserunt, voluptate iure velit blanditiis nisi dolore laborum voluptatem minima? Explicabo, voluptatum. Eius, facilis?.'
+      },
+      uluwatu: {
+        title: 'Uluwatu',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum at facere dicta laudantium ipsam, ea cupiditate similique necessitatibus, sunt est earum saepe. Totam repellendus consequuntur eligendi nostrum! Ab eos aliquid exercitationem corrupti corporis asperiores.'
+      },
+      ubud: {
+        title: 'Ubud',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit molestiae perferendis officiis harum suscipit! Odio doloremque quis adipisci reprehenderit veniam labore eaque a autem minus maiores ducimus eius, temporibus iste, tempora at placeat nisi magni consequuntur!'
+      }
+    };
+
+    const selectedContent = content[location];
+    const contentDiv = document.getElementById('content');
+
+    contentDiv.innerHTML = `
+      <h3 class="text-xl text-primary font-semibold pb-6">${selectedContent.title}</h3>
+      <p class="mx-auto text-gray-600 leading-6 max-w-2xl">
+        ${selectedContent.description}
+      </p>
+      <div class="flex justify-center pt-6">
+        <button class="bg-primary text-white py-2 px-6 rounded-full hover:bg-green-950 transition duration-500 ease-in-out">Search</button>              
+      </div>
+    `;
+  }
+</script>
 </body>
 </html>
