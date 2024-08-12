@@ -25,7 +25,7 @@
 <section>
     <div class="h-screen bg-cover bg-center" style="background-image: url('dist/img/hero-section.png'); position: relative;">
         <div class="p-5">
-            <nav class="bg-white bg-opacity-90 py-5 px-10 rounded-full shadow-md z-20 relative">
+          <nav class="bg-white bg-opacity-70 py-5 px-10 rounded-full shadow-md z-20 relative">
                 <div class="mx-auto flex justify-between items-center">
                     <div class="flex items-center space-x-5">
                         <img src="dist/img/logo-hitam2.png" alt="wpp-logo" class="h-10">
@@ -118,29 +118,8 @@
                                               <!-- Tambahkan item menu lainnya di sini jika diperlukan -->
                                           </ul>
                                       </li>
-                                      <li class="px-3 py-1 hover:bg-gray-100 relative">
-                                          <button
-                                              aria-haspopup="true"
-                                              aria-controls="menu-lang-yearly"
-                                              class="w-full text-left flex items-center outline-none focus:outline-none min-w-32">
-                                              <span class="pr-1 flex-1 text-black hover:text-primary">Land</span>
-                                          </button>
-                                          <ul
-                                              id="menu-lang-yearly"
-                                              aria-hidden="true"
-                                              class="bg-white border rounded-sm absolute top-0 right-0 mt-1 transition duration-150 ease-in-out origin-top-left min-w-40">
-                                              <li class="px-3 py-1 hover:bg-gray-100">
-                                                  <a href="/yearly-villa" class="block w-full h-full text-black hover:text-primary">Monthly</a>
-                                              </li>
-                                              <li class="px-3 py-1 hover:bg-gray-100">
-                                                <a href="/yearly-villa" class="block w-full h-full text-black hover:text-primary">Yearly</a>
-                                            </li>
-                                              <!-- Tambahkan item menu lainnya di sini jika diperlukan -->
-                                          </ul>
-                                      </li>
                                   </ul>
-                              </li>
-                              
+                              </li>            
                             </ul>
                         </div>
                         
@@ -151,21 +130,15 @@
                     </div>
                     <div class="flex items-center space-x-4">
                       <!-- Button -->
-                      <a href="withus.html" class="bg-primary text-white py-2 px-4 rounded-full hover:bg-green-950 transition duration-500 ease-in-out">
-                          List Property with Us
-                      </a>
-                      <!-- Social Media Icons -->
-                        <div class="flex justify-center space-x-4">
-                            <a href="https://www.whatsapp.com" target="_blank" class="text-black">
-                                <i class="fab fa-whatsapp fa-lg"></i> <!-- Ikon WhatsApp -->
-                            </a>
-                            <a href="https://www.address.com" target="_blank" class="text-black">
-                                <i class="fas fa-map-marker-alt fa-lg"></i> <!-- Ikon Maps -->
-                            </a>
-                            <a href="mailto:someone@example.com" target="_blank" class="text-black">
-                                <i class="fas fa-envelope fa-lg"></i> <!-- Ikon Email -->
-                            </a>
-                        </div>
+                      <div class="relative flex items-center border rounded-full w-32">
+                        <input id="code-ref" type="text" placeholder="REF ID" class="border-none rounded-full p-2 px-4 flex-grow w-full pr-10">
+                        <a href="halaman-tujuan.html" class="absolute right-0 p-2 px-4 text-primary">
+                          <i class="fas fa-search"></i>
+                        </a>
+                      </div>
+                        <a href="withus.html" class="bg-primary text-white py-2 px-4 rounded-full hover:bg-green-950 transition duration-500 ease-in-out">
+                          LIST PROPERTY WITH US
+                      </a>                                   
                     </div>                                  
                 </div>
             </nav>
@@ -178,66 +151,62 @@
                         <h1 class="text-6xl text-center text-primary mb-5">Believe in finding it</h1>
                         <p class="text-base text-center text-primary mb-10">Search properties for sale and to rent in Bali</p>
                     </div>
-                    <div class="w-full 2xl:px-10">
-                        <div class="bg-white py-6 shadow-lg flex gap-4 justify-center items-center flex-wrap rounded-2xl">
-                            <!-- Code/Ref -->
-                            <div class="flex flex-col">
-                              <label for="code-ref" class="text-primary font-medium ps-1 mb-1">Code/Ref</label>
-                              <input id="code-ref" type="text" placeholder="Enter Code/Ref" class="border border-gray-300 rounded-md p-2 w-32">
-                            </div>
-                            <!-- Location -->
-                            <div class="flex flex-col">
-                                <label for="location" class="text-primary font-medium ps-1 mb-1">Location</label>
-                                <select id="location" class="border border-gray-300 rounded-md p-2">
-                                    <option value="">Select Location</option>
-                                    <option value="canggu">Canggu</option>
-                                    <option value="ubud">Ubud</option>
-                                    <option value="sunset-road">Sunset Road</option>
-                                    <option value="uluwatu">Uluwatu</option>
-                                </select>
-                            </div>
-                            <!-- Type -->
-                            <div class="flex flex-col">
-                                <label for="type" class="text-primary font-medium ps-1 mb-1">Type</label>
-                                <select id="type" class="border border-gray-300 rounded-md p-2">
-                                    <option value="">Select Type</option>
-                                    <option value="leasehold">Leasehold</option>
-                                    <option value="freehold">Freehold</option>
-                                </select>
-                            </div>
-                    
-                            <!-- Bedroom -->
-                            <div class="flex flex-col">
-                                <label for="bedroom" class="text-primary font-medium ps-1 mb-1">Bedroom</label>
-                                <select id="bedroom" class="border border-gray-300 rounded-md p-2">
-                                    <option value="" style="color: #f87171;">Select Bedroom</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                </select>
-                            </div>
-                    
-                            <!-- Min Budget -->
-                            <div class="flex flex-col">
-                                <label for="min-budget" class="text-primary font-medium ps-1 mb-1">Min Budget</label>
-                                <input id="min-budget" type="number" placeholder="Min Budget" min="1000000" step="1000000" class="border border-gray-300 rounded-md p-2 w-32">
-                            </div>
-                    
-                            <!-- Max Budget -->
-                            <div class="flex flex-col">
-                                <label for="max-budget" class="text-primary font-medium ps-1 mb-1">Max Budget</label>
-                                <input id="max-budget" type="number" placeholder="Max Budget" max="10000000" step="1000000" class="border border-gray-300 rounded-md p-2 w-32">
-                            </div>
-                    
-                            <!-- Search Button -->
-                            <div class="flex flex-col">
-                                <label for="max-budget" class="text-white ps-1 mb-1">Search</label>
-                                <button class="bg-primary text-white py-2 px-6 rounded-full hover:bg-green-950 transition duration-500 ease-in-out w-full max-w-xs">Search</button>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="w-full">
+                      <div class="bg-white bg-opacity-95 p-6 shadow-lg flex gap-4 justify-center items-start flex-wrap rounded-2xl">
+                          <!-- Location -->
+                          <div class="flex flex-col flex-1">
+                              <label for="location" class="text-primary font-medium mb-2 ps-1">LOCATION</label>
+                              <select id="location" class="border border-gray-300 rounded-md p-3 w-full">
+                                  <option value="">SELECT LOCATION</option>
+                                  <option value="canggu">CANGGU</option>
+                                  <option value="ubud">UBUD</option>
+                                  <option value="sunset-road">SUNSET ROAD</option>
+                                  <option value="uluwatu">ULUWATU</option>
+                              </select>
+                          </div>
+                          
+                          <!-- Type -->
+                          <div class="flex flex-col flex-1">
+                              <label for="type" class="text-primary font-medium mb-2 ps-1">TYPE</label>
+                              <select id="type" class="border border-gray-300 rounded-md p-3 w-full">
+                                  <option value="">SELECT TYPE</option>
+                                  <option value="leasehold">LEASEHOLD</option>
+                                  <option value="freehold">FREEHOLD</option>
+                              </select>
+                          </div>
+                  
+                          <!-- Bedroom -->
+                          <div class="flex flex-col flex-1">
+                              <label for="bedroom" class="text-primary font-medium mb-2 ps-1">BEDROOM</label>
+                              <select id="bedroom" class="border border-gray-300 rounded-md p-3 w-full">
+                                  <option value="">SELECT BEDROOM</option>
+                                  <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                                  <option value="4">4</option>
+                                  <option value="5">5</option>
+                              </select>
+                          </div>
+                  
+                          <!-- Min Budget -->
+                          <div class="flex flex-col flex-1">
+                              <label for="min-budget" class="text-primary font-medium mb-2 ps-1">MIN BUDGET</label>
+                              <input id="min-budget" type="number" placeholder="MIN BUDGET" min="1000000" step="1000000" class="border border-gray-300 rounded-md p-3 w-full">
+                          </div>
+                  
+                          <!-- Max Budget -->
+                          <div class="flex flex-col flex-1">
+                              <label for="max-budget" class="text-primary font-medium mb-2 ps-1">MAX BUDGET</label>
+                              <input id="max-budget" type="number" placeholder="MAX BUDGET" max="10000000" step="1000000" class="border border-gray-300 rounded-md p-3 w-full">
+                          </div>
+                  
+                          <!-- Search Button -->
+                          <div class="flex flex-col flex-1">
+                              <label for="search" class="mb-2 ps-1 text-white">SEARCH</label>
+                              <button class="bg-primary text-white p-3 px-6 rounded-md hover:bg-green-950 transition duration-300 ease-in-out w-full">SEARCH</button>
+                          </div>
+                      </div>
+                  </div>
                 </div>
             </div>
         </div>
@@ -562,73 +531,33 @@
 
 <!-- Contact Us -->
 <section id="contact-us" class="pt-16 pb-16 relative overflow-hidden" style="background-image: url('dist/img/hero-section.png'); background-size: cover; background-position: center;">
-  <div class="absolute inset-0 bg-black opacity-50"></div> <!-- Black Overlay -->
-
-  <div class="container relative z-10">
+  <div class="container">
     <div class="flex flex-wrap">
       <div class="w-full">
-        <div class="flex flex-wrap md:flex-nowrap md:gap-10 lg:gap-20">
-          <div class="w-full md:w-1/3">
-              <h3 class="text-xl text-white font-semibold mb-9">CONTACT US</h3>
-              <h5 class="text-lg text-white font-semibold leading-9">+6287 87706 4440</h5>
-              <p class="text-sm text-white text-justify leading-9"><a href="mailto:someone@example.com" target="_blank" class="text-white">
-                <i class="fas fa-envelope fa-lg"></i> <!-- Ikon Maps -->
-              </a>admin@weprovidepropertybali.com</p>
-              <p class="text-sm text-white text-justify leading-9"><a href="https://www.address.com" target="_blank" class="text-white">
-                <i class="fas fa-home fa-lg"></i> <!-- Ikon Maps -->
-              </a>Jalan Mawar Asri, No. 01 Canggu - Bali</p>
-              <p class="text-sm text-white text-justify leading-9"><a href="https://www.address.com" target="_blank" class="text-white">
-                <i class="fas fa-map-marker-alt fa-lg"></i> <!-- Ikon Maps -->
-              </a>View Our Location on Maps</p>
-          </div>
-          <div class="w-full md:w-1/3">
-            <h3 class="text-xl text-white font-semibold mb-9">SEND US A MESSAGE</h3>            
-            <form action="send_email.php" method="POST" class="space-y-4">
-              <div>
-                <label for="name" class="block text-sm font-medium text-white">Name</label>
-                <input type="text" id="name" name="name" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-500 sm:text-sm" />
-              </div>
-          
-              <div>
-                <label for="email" class="block text-sm font-medium text-white">Email</label>
-                <input type="email" id="email" name="email" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-500 sm:text-sm" />
-              </div>
-          
-              <div>
-                <label for="phone" class="block text-sm font-medium text-white">Phone</label>
-                <input type="tel" id="phone" name="phone" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-500 sm:text-sm" />
-              </div>
-          
-              <div>
-                <label for="subject" class="block text-sm font-medium text-white">Subject</label>
-                <input type="text" id="subject" name="subject" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-500 sm:text-sm" />
-              </div>
-            </form>
-          </div>
-          
-          <div class="w-full md:w-1/3">
-            <h3 class="text-xl text-white font-semibold mb-16"></h3>
-            <form action="send_email.php" method="POST" class="space-y-4">
-              <div>
-                <label for="message" class="block text-sm font-medium text-white">Message</label>
-                <textarea id="message" name="message" rows="4" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-500 sm:text-sm"></textarea>
-              </div>
-              <div>
-                <p class="text-base text-white">This site is protected by re-CAPTCHA and the Google <span class="text-yellow-500">Privacy Policy</span> and <span class="text-yellow-500">Terms of Service</span> apply.</p>
-              </div>
-              <div>
-                <button type="submit" class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-yellow-500 hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500">
-                  Submit
-                </button>
-              </div>
-            </form>
-          </div>         
+        <!-- Centering the text and paragraph -->
+        <div class="text-start mb-8">
+          <h3 class="text-3xl text-primary font-semibold pb-1">STAY CONNECTED</h3>
+          <p>Get exclusive offers straight to your inbox</p>
         </div>
+        <div class="flex flex-wrap items-center gap-4">
+          <div class="flex flex-col flex-1">
+              <input id="min-budget" type="number" placeholder="NAME" class="border border-gray-300 rounded-md p-3 w-full">
+          </div>
+          <div class="flex flex-col flex-1">
+            <input id="min-budget" type="number" placeholder="EMAIL" class="border border-gray-300 rounded-md p-3 w-full">
+        </div>
+          <div class="flex flex-col flex-1">
+              <input id="max-budget" type="number" placeholder="PHONE" class="border border-gray-300 rounded-md p-3 w-full">
+          </div>
+          <div class="flex flex-col flex-shrink-0">
+              <button class="bg-primary text-white p-3 px-6 rounded-md hover:bg-green-950 transition duration-300 ease-in-out ">JOIN US</button>
+          </div>
+        </div>                                      
       </div>
     </div>
   </div>
 </section>
-<!-- Contact Us -->
+
 
 <!-- Footer Usefull links-->
 <section id="footer" class="pt-10 pb-10 bg-zinc-800">
@@ -676,33 +605,19 @@
               </li>
             </ul>
           </div>
-          
           <div class="w-full md:w-[20%]">
-            <h3 class="text-xl text-white font-semibold mb-4">CERTIFIED BY</h3>
             <img src="dist/img/logo-putih2.png" alt="wpp-logo" class="h-10 mb-4">
-          
-            <div class="flex space-x-4 text-center">
+            <h3 class="text-xl text-white font-semibold mb-2">WE ACCEPT</h3>
+            <div class="flex items-center space-x-2">
               <!-- Bitcoin Icon -->
               <a href="https://www.bitcoin.org" target="_blank" class="text-white hover:text-yellow-500">
                 <i class="fab fa-bitcoin fa-2x"></i>
               </a>
-
-               <!-- Bitcoinc Sign -->
-               <a href="https://www.litecoin.org" target="_blank" class="text-white hover:text-yellow-500">
-                <i class="fa-solid fa-bitcoin-sign fa-2x"></i>
-              </a>
-          
-              <!-- Ethereum Icon -->
-              <a href="https://www.ethereum.org" target="_blank" class="text-white hover:text-yellow-500">
-                <i class="fab fa-ethereum fa-2x"></i>
-              </a>
-
-              <!-- Litecoin Icon -->
-              <a href="https://www.ripple.com" target="_blank" class="text-white hover:text-yellow-500">
-                <i class="fa-solid fa-litecoin-sign fa-2x"></i>
-              </a>
+              <!-- Centered Text -->
+              <h5 class="flex text-center text-white" style="letter-spacing: 0.05em;">Crypto.</h5>
               <!-- Add more icons as needed -->
             </div>
+            
           </div> 
         </div>
       </div>
